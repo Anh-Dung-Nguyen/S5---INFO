@@ -1,0 +1,57 @@
+<?xml-stylesheet href="style.css" type="text/css"?>
+<INDI ID="142070">
+niveau 0
+	<NAME>Vincent<S>GASSOT</S></NAME>
+niveau 1
+	<SEX>M</SEX>
+niveau 1
+	<OCCU>cultivateur</OCCU>
+niveau 1
+	<EVEN EV='BIRT'>
+niveau 1
+		<DATE>1754</DATE>
+niveau 2
+		<PLAC>Cherrueix,35120,,Ille-et-Vilaine,France</PLAC>
+niveau 2
+	sortir 2
+</EVEN>
+	<FAMS REF="142074"></FAMS>
+niveau 1
+sortir 1
+</INDI>
+<INDI ID="142072">
+niveau 0
+	<NAME>Marie<S>LEMONNIER</S></NAME>
+niveau 1
+	<SEX>F</SEX>
+niveau 1
+	<EVEN EV='DEAT'>
+niveau 1
+		<DATE>5 JAN 1820</DATE>
+niveau 2
+		<PLAC>Cherrueix,35120,,Ille-et-Vilaine,France</PLAC>
+niveau 2
+	sortir 2
+</EVEN>
+	<FAMS REF="142074"></FAMS>
+niveau 1
+	<FAMC REF="142120"></FAMC>
+niveau 1
+sortir 1
+</INDI>
+<FAM ID="142074">
+niveau 0
+	<HUSB REF="142070"></HUSB>
+niveau 1
+	<WIFE REF="142072"></WIFE>
+niveau 1
+	<CHIL REF="142053"></CHIL>
+niveau 1
+	<EVEN EV='MARR'>
+niveau 1
+		<DATE>1796</DATE>
+niveau 2
+		<PLAC>Cherrueix,35120,,Ille-et-Vilaine,France</PLAC>
+niveau 2
+	</EVEN>
+</FAM>
