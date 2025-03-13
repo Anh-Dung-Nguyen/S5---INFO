@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra -pedantic-errors -g CMakeFiles/Ex1.dir/main.c.o CMakeFiles/Ex1.dir/tache.c.o CMakeFiles/Ex1.dir/liste.c.o -o Ex1

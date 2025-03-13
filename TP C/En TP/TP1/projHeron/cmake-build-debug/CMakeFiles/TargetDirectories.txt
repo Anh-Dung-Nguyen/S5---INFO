@@ -1,0 +1,3 @@
+/home/nguyen-anh-dung/CLionProjects/projHeron/cmake-build-debug/CMakeFiles/projHeron.dir
+/home/nguyen-anh-dung/CLionProjects/projHeron/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nguyen-anh-dung/CLionProjects/projHeron/cmake-build-debug/CMakeFiles/rebuild_cache.dir

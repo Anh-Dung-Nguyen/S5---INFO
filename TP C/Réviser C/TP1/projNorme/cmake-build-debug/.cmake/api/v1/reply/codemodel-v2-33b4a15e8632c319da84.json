@@ -1,0 +1,60 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.29"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "projNorme",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "projNorme::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-projNorme-Debug-37015bf982a7052925db.json",
+					"name" : "projNorme",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nguyen-anh-dung/Nguyen Anh Dung/S5 - INFO/TP C/R\u00e9viser C/TP1/projNorme/cmake-build-debug",
+		"source" : "/home/nguyen-anh-dung/Nguyen Anh Dung/S5 - INFO/TP C/R\u00e9viser C/TP1/projNorme"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

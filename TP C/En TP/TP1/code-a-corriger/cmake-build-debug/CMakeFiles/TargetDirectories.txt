@@ -1,0 +1,3 @@
+/home/nguyen-anh-dung/CLionProjects/code-a-corriger/cmake-build-debug/CMakeFiles/code_a_corriger.dir
+/home/nguyen-anh-dung/CLionProjects/code-a-corriger/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nguyen-anh-dung/CLionProjects/code-a-corriger/cmake-build-debug/CMakeFiles/rebuild_cache.dir

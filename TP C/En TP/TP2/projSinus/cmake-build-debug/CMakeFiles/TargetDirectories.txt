@@ -1,0 +1,3 @@
+/home/nguyen-anh-dung/Nguyen Anh Dung/S5 - INFO/TP C/TP2/projSinus/cmake-build-debug/CMakeFiles/projSinus.dir
+/home/nguyen-anh-dung/Nguyen Anh Dung/S5 - INFO/TP C/TP2/projSinus/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nguyen-anh-dung/Nguyen Anh Dung/S5 - INFO/TP C/TP2/projSinus/cmake-build-debug/CMakeFiles/rebuild_cache.dir
