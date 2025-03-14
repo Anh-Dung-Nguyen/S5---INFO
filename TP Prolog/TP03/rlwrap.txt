@@ -1,0 +1,2 @@
+rlwrap "/home/nguyen-anh-dung/Nguyen Anh Dung/S5 - INFO/eclipse_basic/bin/x86_64_linux/eclipse"
+
