@@ -1,0 +1,8 @@
+lib: [
+  "_build/install/default/lib/TPOCAML/META"
+  "_build/install/default/lib/TPOCAML/dune-package"
+  "_build/install/default/lib/TPOCAML/opam"
+]
+bin: [
+  "_build/install/default/bin/TPOCAML"
+]
