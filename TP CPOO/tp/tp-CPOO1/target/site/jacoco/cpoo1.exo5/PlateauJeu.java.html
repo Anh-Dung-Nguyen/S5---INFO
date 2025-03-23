@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PlateauJeu.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">test</a> &gt; <a href="index.source.html" class="el_package">cpoo1.exo5</a> &gt; <span class="el_source">PlateauJeu.java</span></div><h1>PlateauJeu.java</h1><pre class="source lang-java linenums">package cpoo1.exo5;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+interface Pion {
+    int getX();
+    int getY();
+}
+
+public class PlateauJeu {
+
+    /*
+    Les classes d'équivalence de la coordonnée x et y:
+    Les valeurs valides: x = [0, SIZE - 1] et y = [0, SIZE - 1]
+    Les valeurs invalides: x &lt; 0 et y &lt; 0
+                           x &gt; SIZE et y &gt; SIZE
+     */
+
+    /**
+     * Un plateau est carré et de cette dimension.
+     **/
+    public static final int SIZE = 5;
+
+    private final List&lt;Pion&gt; pions;
+    //la référence à la liste ne peut pas être réassignée, mais le contenu de la liste (c'est-à-dire les éléments qu'elle contient) peut être modifié.
+
+    /*
+    Attribut primitif final (SIZE) : Sa valeur est constante après l'initialisation.
+    Par exemple, SIZE est toujours égal à 5 et ne peut pas être changé.
+
+    Attribut complexe final (pions) : Bien que la référence à la liste ne puisse pas être changée, les éléments de la liste peuvent être ajoutés ou supprimés.
+    La structure des données peut donc être modifiée, mais la référence à cette structure reste constante.
+     */
+
+<span class="fc" id="L37">    public PlateauJeu() {</span>
+<span class="fc" id="L38">        pions = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L39">    }</span>
+
+    /**
+     * @return La liste des pions du plateau.
+     * La liste retournée n'est pas modifiable : par exemple, un appel à clear() sur cette liste
+     * levera une exception UnmodifiableListException.
+     */
+    public List&lt;Pion&gt; getPions() {
+<span class="nc" id="L47">        return Collections.unmodifiableList(pions);</span>
+    }
+
+    /**
+     * Retourne vrai si aucun pion n'est placé aux coordonnées données.
+     **/
+    public boolean isFree(final int x, final int y) {
+<span class="nc bnc" id="L54" title="All 4 branches missed.">        if(isOut(x) || isOut(y)) {</span>
+<span class="nc" id="L55">            return false;</span>
+        }
+
+<span class="nc bnc" id="L58" title="All 2 branches missed.">        for (final Pion pion : pions) {</span>
+<span class="nc bnc" id="L59" title="All 4 branches missed.">            if (pion.getX() == x &amp;&amp; pion.getY() == y) {</span>
+<span class="nc" id="L60">                return false;</span>
+            }
+<span class="nc" id="L62">        }</span>
+
+<span class="nc" id="L64">        return true;</span>
+    }
+
+    /**
+     * Ajoute un pion au plateau si non nul et si aucun autre pion n'est déjà placé
+     * aux mêmes coordonnées.
+     **/
+    public boolean addPion(final Pion p) {
+<span class="nc bnc" id="L72" title="All 4 branches missed.">        if (p == null || !isFree(p.getX(), p.getY())) {</span>
+<span class="nc" id="L73">            return false;</span>
+        }
+<span class="nc" id="L75">        pions.add(p);</span>
+<span class="nc" id="L76">        return true;</span>
+    }
+
+    /**
+     * La position d'un élément du plateau est forcement dans l'intervalle [0,SIZE[.
+     **/
+    public boolean isOut(final int value) {
+<span class="fc bfc" id="L83" title="All 4 branches covered.">        return value &lt; 0 || value &gt;= SIZE;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

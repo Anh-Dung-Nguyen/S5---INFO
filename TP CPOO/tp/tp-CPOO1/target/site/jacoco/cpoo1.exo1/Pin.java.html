@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Pin.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">test</a> &gt; <a href="index.source.html" class="el_package">cpoo1.exo1</a> &gt; <span class="el_source">Pin.java</span></div><h1>Pin.java</h1><pre class="source lang-java linenums">package cpoo1.exo1;
+
+public class Pin extends Arbre{
+<span class="nc" id="L4">    private static double prix = 500;</span>
+<span class="nc" id="L5">    private static double agemin = 5;</span>
+
+    public Pin() {
+<span class="nc" id="L8">        super(prix, agemin);</span>
+<span class="nc" id="L9">        this.prix = 500;</span>
+<span class="nc" id="L10">        this.agemin = 5;</span>
+<span class="nc" id="L11">    }</span>
+
+    public Pin(double prix, double agemin) {
+<span class="nc" id="L14">        super(prix, agemin);</span>
+<span class="nc" id="L15">        this.prix = 500;</span>
+<span class="nc" id="L16">        this.agemin = 5;</span>
+<span class="nc" id="L17">    }</span>
+
+    @Override
+    public double getPrix() {
+<span class="nc" id="L21">        return prix;</span>
+    }
+
+    public double getAgemin() {
+<span class="nc" id="L25">        return agemin;</span>
+    }
+
+    public void setPrix(double prix) {
+<span class="nc" id="L29">        this.prix = prix;</span>
+<span class="nc" id="L30">    }</span>
+
+    public void setAgemin(double agemin) {
+<span class="nc" id="L33">        this.agemin = agemin;</span>
+<span class="nc" id="L34">    }</span>
+
+    @Override
+    public double defPrix(){
+<span class="nc" id="L38">        return prix * volume;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

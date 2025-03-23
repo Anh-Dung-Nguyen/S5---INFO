@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Line.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">test</a> &gt; <a href="index.source.html" class="el_package">cpoo1.cours</a> &gt; <span class="el_source">Line.java</span></div><h1>Line.java</h1><pre class="source lang-java linenums">package cpoo1.cours;
+
+class Line {
+    private Point p1;
+    private Point p2;
+
+<span class="fc" id="L7">    public Line(double x1, double y1, double x2, double y2) {</span>
+<span class="fc" id="L8">       p1 = new Point(x1, y1);</span>
+<span class="fc" id="L9">       p2 = new Point(x2, y2);</span>
+<span class="fc" id="L10">    }</span>
+
+    public boolean isVertical() {
+<span class="fc" id="L13">        double res = p1.x() - p2.x();</span>
+<span class="pc bpc" id="L14" title="1 of 2 branches missed.">        return Math.abs(res) &lt;= 0.000001;</span>
+    }
+
+    public double getA() {
+<span class="pc bpc" id="L18" title="1 of 2 branches missed.">       if(isVertical()) {</span>
+<span class="nc" id="L19">          return Double.NaN;</span>
+       }
+<span class="fc" id="L21">       return (p1.y() - p2.y()) / (p1.x() - p2.x());</span>
+    }
+
+    public double getB() {
+<span class="pc bpc" id="L25" title="1 of 2 branches missed.">       return isVertical() ? Double.NaN : p1.y() - getA() * p1.x();</span>
+    }
+ }
+
+<span class="fc" id="L29">record Point(double x, double y) {</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>
